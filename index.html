@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+      <title>Basic Form || Hi This is Form</title>
+    <!-- Meta tags Used -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"
+      <meta name="description" content="Basic Form">
+      <meta name="keywords" content="HTML,CSS,Bootstrap,JS">
+      <meta name="author" content="tchaitanya.nyros">   
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- External css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+  <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script> 
+     
+  </head>  
+   
+  <body style="background-color:#eee; overflow:auto; ">
+ <!--  Form  -->
+    <form id="myform" action=""  method="GET"; onsubmit="return validateForm();"   >
+      <!-- Panel Heading -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">Basic Form</div>
+        <div class="panel-body">
+            <table>
+                  <tr>
+                      <td >First Name: </td>
+
+                      <td><input type="text" name="fullname" id="fname" placeholder="First Name" style="margin-top: 5px;"><span id="fnm" class="error"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Last Name: </td>
+                      <td><input type="text" name="lastname" id="lname" placeholder="Last Name" ><span id="lnm" class="error"></span></td>
+                  </tr>
+ 
+                  <tr>
+                      <td>Email: </td>
+                      <td><input type="text"   name="email" id="email" placeholder="Email@.com"><span id="enm" class="error"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Phone: </td>
+                      <td><input type="text" name="Phone" id="pn" placeholder="1231-325-5687"  ><span id="pnm" class="error"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Gender</td>
+                      <td><input type="radio" name="gender_male" value="male" id="gn" checked> Male<br></td>
+                      <td><input type="radio" name="gender_female" value="female"  style="margin-left:-80px; "> Female<br><span id="gnm" class="error"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Country</td>
+                      <td ><select id="mySelect" id="usrname" name="usrname"  style="width:90px;   margin-bottom:10px;">
+                              <option value="">Select  </option>       
+                              <option>India</option>
+                              <option>US</option>
+                              <option>UK</option>
+                              <option>AUS</option>
+                            </select><span id="cnm" class="error"></span>
+                      </td>
+                  </tr>
+                  <tr> 
+                    <td><input type="checkbox"  value="" class="form-control" name="checkbox"></td>
+                      <td style="margin-left:-80px">I Agree to Privacy Policy</td>
+                      
+                  </tr>
+            </table>
+            <!-- Submit Button -->
+            <input type="submit" value="Submit"/>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>  
+            
+
